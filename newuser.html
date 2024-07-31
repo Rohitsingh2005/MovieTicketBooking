@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+        <form method="post" action="registered.php" >
+            <h3>Register here</h3>
+            <input type="text" name="a" placeholder="Enter your name"><br>
+           <input type="email" name="b" placeholder="Enter your email"><br>
+           <input type="tel" name="c" placeholder="Enter your phone number" maxlength="10" minlength="10"><br>
+        <input type="password" name="d" placeholder="Enter your password" minlength="6"><br>
+        <input type="submit" value="Submit" onclick="return validateForm()"> &nbsp;
+        <input type="reset" value="Reset"><br>
+        <a href="login.html">Click here to login</a>
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+          var x = document.forms["myForm"]["a"].value;
+          if (x == "") {
+            alert("Name must be filled out");
+            return false;
+          }
+          else if(document.forms["myForm"]["d"].value.length <6){
+            alert("Password too short!!");
+            return false;
+        }
+         else if(document.forms["myForm"]["c"].value.length <10){
+            alert("valid phone number!!");
+            return false;
+        }
+        }
+        </script>
+    </body>
+</html>

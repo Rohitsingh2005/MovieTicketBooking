@@ -1,0 +1,81 @@
+body{
+    background-image: url('back.jpeg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+.area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    margin: 2rem;
+    margin-left: 3rem;
+    width: 100%;
+    text-align: left;
+}
+.one{
+    width: 100%;
+    display: flex;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    text-align: left;
+}
+.des{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+}
+.one img{
+    object-fit: cover;
+    height: 8rem;
+    width: 8rem;
+    margin-right: 2rem;
+    border: none;
+}
+img
+{
+    width: 8rem;
+    height: 8rem;
+    background-size: cover;
+}
+button{
+    width: 5rem;
+    height: 2rem;
+    border-radius: 0.8rem;
+    background: transparent;
+    border: none;
+    background-color: rgb(58, 220, 120);
+}
+
+.head{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+p{
+    display: flex;
+    float: left;
+}
+#logout{
+    width: 10rem;
+    background-color: rgb(91, 181, 191);
+}
+a:link{
+    padding: 1rem;
+    font-style: italic;
+    text-decoration: none;
+}
+button:hover{
+    background-color: rgb(38, 183, 223);
+}
+.area .one input
+{
+    width: 60px;
+    margin-bottom: 0.2rem;
+    border-radius: 0.3rem;
+    
+}

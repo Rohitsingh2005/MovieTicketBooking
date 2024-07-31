@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+      </head>
+    <body>
+        <div class="container">
+        <form action="check.php" method="post" onsubmit="return validateForm()">
+            <h3>Login here</h3>
+            <input type="text" name="a" placeholder="Enter your name"><br>
+            <input type="password" name="b" placeholder="Enter your password"><br>
+            <input type="submit" value="Submit" onclick="return validateForm()"> &nbsp;
+            <input type="reset" value="Reset"><br>
+            <a href="newuser.html">Click here to Register</a>
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+          var x = document.forms["myForm"]["a"].value;
+          if (x == "") {
+            alert("Name must be filled out");
+            return false;
+          }
+          else if(document.forms["myForm"]["b"].value.length <6){
+            alert("Password too short!!");
+            return false;
+        }
+        }
+        </script>
+    </body>
+</html>

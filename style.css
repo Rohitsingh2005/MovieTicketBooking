@@ -1,0 +1,56 @@
+body{
+    text-align: center;
+    background-image: url('log.jpg');
+    color: white;
+}
+.container{
+    padding: 120px;
+    box-sizing: border-box;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type=text] ,input[type=email],input[type=tel], input[type=password]
+{
+    width: 16rem;
+    text-align: center;
+    font-style: italic;
+    color: white;
+    font-size: large;
+    padding: 0.5rem;
+    background-color: rgba(58, 56, 56, 0.395);
+    border-radius: 8px;
+    margin: 6px;
+    box-shadow: none;
+    border: transparent;
+}
+h3{
+    padding: 0%;
+    margin: 0%;
+    font-size:xx-large;
+}
+input[type=submit],input[type=reset]
+{
+    width: 6rem;
+    padding: 0.3rem;
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+    border: none;
+    border-radius: 2rem;
+}
+input[type=reset]
+{
+    background-color: rgb(248, 76, 76);
+}
+input[type=submit]
+{
+    background-color: rgb(91, 228, 132);
+}
+a:link{
+    color:rgb(41, 237, 178);
+    font-size:x-large;
+    padding: 1rem;
+    font-style: italic;
+    text-decoration: none;
+}
